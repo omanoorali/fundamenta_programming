@@ -58,7 +58,7 @@
 // echo $temp;
 
 // name converter // uper and lowe case.
-echo "dasdf";
+// echo "dasdf";
 // echo $name = "ali";
 // $last_name = "khan";
 
@@ -82,17 +82,61 @@ echo "dasdf";
 
 // 1 object
 
-$user =[
-    "name"=>"khan",
-    "email"=>"khan@gamil.com",
-    "is_admin"=>true,
-    "age"=>22,
-    "skills"=>"php laravel"
+// service obj f1
+$service = [
+"name"=>"cctve",
+"price"=>"4500",
+"city"=>"karachi",
 ];
 
-$data = (object) $user;
-echo $data.email;
+$services = (object) $service;
+echo $services->city;
 
+echo "<br>";
+// persnal  obj 2
+
+$profile = [
+
+"name"=>"alli",
+"email"=>"ali@gamil.com",
+"age"=>"39",
+"city"=>"karachi",
+];
+
+$profiles = (object) $profile;
+echo $profiles->email;
+
+echo "<br>";
+//company
+$company = [
+    "name"=>"sts",
+    "services"=>"web and app",
+    "year"=>"30",
+    "location"=>"karachi",
+];
+
+$company_data = (object) $company;
+echo $company_data->services;
+echo "<br>";
+// teacher 
+$teacher = [
+    "name"=>"asad",
+    "subject"=>"php",
+    "experience"=>"23 years",
+];
+
+$teacher_data = (object) $teacher;
+echo $teacher_data->subject;
+echo "<br>";
+// e comerce web
+$web = [
+    "hosting"=>"localhost",
+    "domain"=>"uk",
+];
+
+$web_data = (object) $web;
+echo $web_data->hosting;
+// echo "sdfs";
 
 // Task2 Product Array
 
